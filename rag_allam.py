@@ -81,11 +81,11 @@ def chromaDBquery(query):
 def hello():                      # call method hello
     return "Hello World!"         # which returns "hello world"
 
-#print(results)
 
+from api.application import create_app
 
-
-if __name__ == "__main__":        # on running python app.py
-    #from waitress import serve
-    #serve(app, host="0.0.0.0", port=8080)
-    app.run(debug=True) 
+if __name__ == '__main__':
+    create_app = create_app()
+    create_app.run()
+else:
+    gunicorn_app = create_app()
