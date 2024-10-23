@@ -82,10 +82,3 @@ def hello():                      # call method hello
     return "Hello World!"         # which returns "hello world"
 
 
-from api.application import create_app
-
-if __name__ == '__main__':
-    create_app = create_app()
-    create_app.run()
-else:
-    gunicorn_app = create_app()
