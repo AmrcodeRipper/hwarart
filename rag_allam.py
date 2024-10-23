@@ -23,7 +23,7 @@ app = Flask(__name__)             # create an app instance
 client = Client()
 
 # Load the embedding model
-embedding_model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
+embedding_model = SentenceTransformer('sentence-transformers/all-MiniLM-L12-v2')
 
 # Load the all-MiniLM-L6-v2 model
 #embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="paraphrase-multilingual-MiniLM-L12-v2")
